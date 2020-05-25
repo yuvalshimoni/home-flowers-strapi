@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/delivery-dates",
+      "handler": "delivery-date.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/delivery-dates/count",
+      "handler": "delivery-date.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/delivery-dates/:id",
+      "handler": "delivery-date.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/delivery-dates",
+      "handler": "delivery-date.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/delivery-dates/:id",
+      "handler": "delivery-date.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/delivery-dates/:id",
+      "handler": "delivery-date.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

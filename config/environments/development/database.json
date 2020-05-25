@@ -1,0 +1,17 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "bookshelf",
+      "settings": {
+        "client": "postgres",
+        "database": "root",
+        "host": "127.0.0.1",
+        "port": 5432,
+        "username": "root",
+        "password": "oi78Uhqo10q"
+      },
+      "options": {}
+    }
+  }
+}

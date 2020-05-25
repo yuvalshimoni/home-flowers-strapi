@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "delivery_dates",
+  "info": {
+    "name": "Delivery Date"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "deliveryDate": {
+      "type": "date"
+    },
+    "orders": {
+      "via": "delivery_date",
+      "collection": "order"
+    }
+  }
+}
