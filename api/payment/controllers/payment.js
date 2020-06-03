@@ -23,9 +23,18 @@ module.exports = {
                     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
                     <title>Home Flowers</title>
+                    </head>
+                    <body dir="rtl">
                     <script type='text/javascript'> top.location = 'https://home-flowers.firebaseapp.com/summary';  </script>
-                  </head>
-                  <body dir="rtl">
+                    <script>
+                      window.top.postMessage(
+                        JSON.stringify({
+                          error: false,
+                          message: 'Here we go'
+                        }),
+                        '*'
+                      );
+                    </script>
                     <div id="root"></div>
                   </body>
                 </html>
