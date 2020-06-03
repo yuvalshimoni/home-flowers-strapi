@@ -3,6 +3,9 @@ module.exports = {
     {
       name: "starpi",
       script: "yarn start",
+      env: {
+        NODE_ENV: "production",
+      },
     },
   ],
 };
