@@ -1,12 +1,14 @@
 "use strict";
+const { parseMultipartData, sanitizeEntity } = require("strapi-utils");
 
-/**
- * A set of functions called "actions" for `payment`
- */
-
+// <script type='text/javascript'> top.location = 'https://home-flowers.firebaseapp.com/summary';  </script>
 module.exports = {
   notify: async (ctx) => {
-    return "yuval hero!";
+    const { custom } = ctx.request.body;
+
+    await strapi.services.order.update({ id: custom }, { is_paid: true });
+
+    return sanitizeEntity(entity, { model: strapi.models.order });
   },
   success: async (ctx) => {
     const html = `
@@ -25,7 +27,7 @@ module.exports = {
                     <title>Home Flowers</title>
                     </head>
                     <body dir="rtl">
-                    <script type='text/javascript'> top.location = 'https://home-flowers.firebaseapp.com/summary';  </script>
+                   
                     <script>
                       window.top.postMessage(
                         JSON.stringify({
