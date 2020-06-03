@@ -7,7 +7,8 @@
     "develop": "strapi develop",
     "start": "NODE_ENV=production strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "update": "git pull && pm2 restart all"
   },
   "devDependencies": {},
   "dependencies": {
