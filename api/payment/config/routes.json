@@ -1,7 +1,7 @@
 {
   "routes": [
     {
-      "method": ["POST", "GET"],
+      "method": "POST",
       "path": "/payment/notify",
       "handler": "payment.notify"
     },
