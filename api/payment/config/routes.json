@@ -6,7 +6,7 @@
       "handler": "payment.notify"
     },
     {
-      "method": "POST",
+      "method": "GET",
       "path": "/payment/success",
       "handler": "payment.success"
     }
