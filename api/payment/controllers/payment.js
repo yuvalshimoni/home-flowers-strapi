@@ -9,6 +9,6 @@ module.exports = {
     return "yuval hero!";
   },
   success: async (ctx) => {
-    return "<script type='text/javascript'> window.location.href = 'https://home-flowers.netlify.app/summary';  </script>";
+    return "<script type='text/javascript'> top.location = 'https://yuvalshimoni.github.io/summary';  </script>";
   },
 };
