@@ -3,11 +3,10 @@ const { parseMultipartData, sanitizeEntity } = require("strapi-utils");
 
 module.exports = {
   notify: async (ctx) => {
-    const id = "47";
-    // const { custom } = ctx.request.body;
+    const { custom } = ctx.request.body;
 
     const entity = await strapi.services.order.update(
-      { id },
+      { id: custom },
       { is_paid: true }
     );
 
