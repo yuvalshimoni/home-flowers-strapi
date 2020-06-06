@@ -2,10 +2,10 @@
 
 module.exports = {
   notify: async (ctx) => {
-    //const id = request.body.custom;
+    const id = ctx.request.body.external_data;
 
     const entity = await strapi.services.order.update(
-      { id: "53" },
+      { id },
       { is_paid: true }
     );
 
