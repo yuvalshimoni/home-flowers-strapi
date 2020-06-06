@@ -9,6 +9,6 @@ module.exports = {
       { is_paid: true }
     );
 
-    return ctx;
+    return ctx.request.body;
   },
 };
