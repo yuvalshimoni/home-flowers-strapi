@@ -2,7 +2,7 @@
 
 module.exports = {
   notify: async ({ request }) => {
-    const id = request?.body?.custom;
+    const id = request.body.custom;
 
     const entity = await strapi.services.order.update(
       { id },
