@@ -1,14 +1,14 @@
 "use strict";
 
 module.exports = {
-  notify: async ({ request }) => {
-    const id = request.body.custom;
+  notify: async (ctx) => {
+    //const id = request.body.custom;
 
     const entity = await strapi.services.order.update(
-      { id },
+      { id: "53" },
       { is_paid: true }
     );
 
-    return request;
+    return ctx;
   },
 };
