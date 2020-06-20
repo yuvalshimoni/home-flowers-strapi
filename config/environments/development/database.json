@@ -8,8 +8,8 @@
         "database": "root",
         "host": "127.0.0.1",
         "port": 5432,
-        "username": "postgres",
-        "password": "Cc3Vv4Bb5"
+        "username": "root",
+        "password": "oi78Uhqo10q"
       },
       "options": {}
     }
